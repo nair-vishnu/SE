@@ -47,6 +47,9 @@ How it Works: This method prints the style properties like font, size, and color
 Example of Flyweight Implementation
 In the text editor, consider you have multiple characters with similar formatting (e.g., all are bold and in Arial font). Instead of creating a unique style object for each character, the Flyweight pattern allows these characters to share a single CharacterStyle instance. For example, if you insert two characters, 'A' and 'B', both with the Arial font, size 12, and bold formatting, they will both reference the same CharacterStyle object, saving memory and improving performance.
 
+**Class Diagram:**
+![Class Diagram](images/classdiagram1.png)
+
 **Conclusion**
 This project effectively demonstrates the Flyweight design pattern through a simple yet functional text editor application. By separating shared properties (styles) from unique properties (character symbol and position), the Flyweight pattern ensures that memory usage is minimized, even when dealing with large documents.
 
